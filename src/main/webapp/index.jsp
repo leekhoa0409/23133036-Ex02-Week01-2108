@@ -12,7 +12,7 @@
     <p>To join our email list, enter your name and
        email address below.</p>
 
-    <form action="/Email/emailList" method="post">
+    <form action="${pageContext.request.contextPath}/emailList" method="post">
         <input type="hidden" name="action" value="add">
 
         <label>Email:</label>
