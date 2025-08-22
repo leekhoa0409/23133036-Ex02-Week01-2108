@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +12,7 @@
     <p>To join our email list, enter your name and
        email address below.</p>
 
-    <form action="emailList" method="post">
+    <form action="/Email/emailList" method="post">
         <input type="hidden" name="action" value="add">
 
         <label>Email:</label>
