@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import murach.business.User;
 
 public class EmailListServlet extends HttpServlet  {
-
+	
     @Override
     protected void doPost(HttpServletRequest request, 
                           HttpServletResponse response) 
@@ -20,7 +20,6 @@ public class EmailListServlet extends HttpServlet  {
         if (action == null) {
             action = "join";  // default action
         }
-        
         // perform action and set URL to appropriate page
         if (action.equals("join")) {
             url = "/index.html";    // the "join" page
@@ -43,8 +42,7 @@ public class EmailListServlet extends HttpServlet  {
         getServletContext()
             .getRequestDispatcher(url)
             .forward(request, response);
-    }  
-    
+    }    
     @Override
     protected void doGet(HttpServletRequest request, 
                          HttpServletResponse response) 
