@@ -24,7 +24,7 @@
        button in your browser or the Return button shown 
        below.</p>
 
-    <form action="${pageContext.request.contextPath}/emailList" method="get">
+    <form action="" method="get">
         <input type="hidden" name="action" value="join">
         <input type="submit" value="Return">
     </form>
