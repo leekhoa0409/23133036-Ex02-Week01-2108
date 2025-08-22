@@ -18,6 +18,7 @@ public class User implements Serializable {
         this.lastName = lastName;
         this.email = email;
     }
+    
     public String getFirstName() {
         return firstName;
     }
